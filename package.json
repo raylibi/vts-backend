@@ -1,0 +1,48 @@
+{
+  "name": "vts-backend",
+  "version": "1.0.0",
+  "description": "Vehicle Tracking System - Backend API for VTS Logistik: pelacakan posisi truk dan kelengkapan paket RFID secara real-time via MQTT + Socket.io",
+  "main": "src/app.js",
+  "license": "MIT",
+  "keywords": [
+    "iot",
+    "mqtt",
+    "socket.io",
+    "express",
+    "postgresql",
+    "vehicle-tracking",
+    "rfid",
+    "esp32"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "node migrations/run.js",
+    "seed": "node seeds/seed_trip.js",
+    "seed:mixed": "node seeds/seed_trip_mixed.js",
+    "seed:esp32": "node seeds/seed_esp32_test.js",
+    "test": "node tests/smoke.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.5.2",
+    "express-validator": "^7.1.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mqtt": "^5.7.0",
+    "node-cron": "^4.2.1",
+    "pg": "^8.12.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

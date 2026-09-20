@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment variables - JANGAN pernah commit file ini
+# (.env.example sengaja di-commit sebagai template — lihat pengecualian di bawah)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime
+pids/
+*.pid
+
+# Python (skrip simulator di tools/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Hasil pengujian yang di-generate skrip tools/ — bukan bagian dari source
+tools/*.csv
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
